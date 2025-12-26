@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar & Video UMY</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- TOP BAR KUNING -->
+  <div class="top-bar">
+    <div class="top-left">
+      <div class="lang-select">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="ID" class="flag">
+        <span>ID</span>
+        <span class="arrow">⌃</span>
+      </div>
+    </div>
+
+    <div class="top-right">
+      <a href="#">News</a>
+      <a href="#">SDGs CENTER</a>
+      <a href="#">Donasi Pendidikan</a>
+      <a href="#" class="search">🔍</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR PUTIH -->
+  <nav class="main-nav">
+
+    <!-- LOGO -->
+    <div class="logo">
+  <a href="/main.html">
+    <img 
+      src="/Image/Logo Header.png" 
+      alt="Logo UMY" 
+      style="width:254.57px; height:40.16px; object-fit:contain;"
+    >
+  </a>
+</div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links">
+      <li><a href="/html/profil.html">Profil</a></li>
+      <li><a href="/html/akademik.html">Akademik</a></li>
+      <li><a href="/html/riset.html">Riset dan Inovasi</a></li>
+      <li><a href="/html/pengabdian.html">Pengabdian</a></li>
+      <li><a href="/html/fasilitas.html">Fasilitas</a></li>
+      <li><a href="/html/campuslife.html">Campus Life</a></li>
+    </ul>
+
+    <!-- BUTTON -->
+    <a href="/html/admisi.html" class="btn-daftar">Pendaftaran Maba</a>
+
+  </nav>
+
+</body>
+
+  <!-- Komponen video banner -->
+  <div class="video-section">
+    <iframe 
+      src="https://www.youtube.com/embed/dBClCl9nRSk?autoplay=1&mute=1&loop=1&playlist=dBClCl9nRSk" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Bagian Rekognisi -->
+  <section class="rekognisi-section">
+    <h2>Rekognisi</h2>
+
+  <div class="logo-row row-1"> <!-- Baris 1 -->
+    <img src="Image/QS-WUR.png" alt="QS World University Rankings">
+    <img src="Image/QS-WUR.png" alt="QS Asia">
+    <img src="Image/QS-WUR.png" alt="QS Sustainability">
+  </div>
+    
+    
+  <div class="logo-row row-2"> <!-- Baris 2 -->
+    <img src="Image/Logo-THE-WUR_Hitam-1.png" alt="THE World University Rankings 2025">
+    <img src="Image/THE-Impact-Rankings-2024_COL_RGB-1.png" alt="THE Impact Rankings 2024">
+    <img src="Image/Logo-UNIRANKS.png" alt="Uniranks">
+  </div>
+
+  <div class="logo-row row-3"> <!-- Baris 3 -->
+    <img src="Image/Logo-KEMENKES-RI.png" alt="Kemenkes RI">
+    <img src="Image/Logo-SNI-Awards.png" alt="SNI Award">
+    <img src="Image/Webometrics_Rank-1024x317.png" alt="Webometrics">
+    <img src="Image/Logo-UI-Green-Metric.png" alt="UI Green Metric">
+  </div>
+
+</section>
+
+<!-- Search Program Studi UMY -->
+<section class="program-studi-section">
+  <h2 class="program-title">PROGRAM STUDI UMY</h2>
+  <p class="program-subtitle">
+    Jelajahi Dunia Ilmu Pengetahuan yang Lebih Luas Bersama Universitas Muhammadiyah Yogyakarta
+  </p>
+
+  <div class="search-container">
+    <h3 class="search-heading">
+      Siap Mengubah Dunia? Mulailah Perjalanan Anda di UMY
+    </h3>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Cari Program Studi">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- UMY IN NUMBER -->
+     <section class="umy-in-number-section">
+  <div class="number-container">
+    <h2 class="section-title">UMY in Number</h2>
+
+    <div class="row">
+      <div class="number-card">
+        <span class="number-count" data-target="669">669</span>
+        <p class="label">Dosen</p>
+        <div class="underline"></div>
+      </div>
+
+      <div class="number-card">
+        <span class="number-count" data-target="545">545</span>
+        <p class="label">Dosen Tersertifikasi</p>
+        <div class="underline"></div>
+      </div>
+
+      <div class="number-card">
+        <span class="number-count" data-target="43">43</span>
+        <p class="label">Guru Besar</p>
+        <div class="underline"></div>
+      </div>
+
+      <div class="number-card">
+        <span class="number-count" data-target="228">228</span>
+        <p class="label">Staff Internasional</p>
+        <div class="underline"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="number-card">
+        <span class="number-count" data-target="24116">24.116</span>
+        <p class="label">Mahasiswa Aktif (2024/2025)</p>
+        <div class="underline"></div>
+      </div>
+
+      <div class="number-card">
+        <span class="number-count" data-target="1894">1.894</span>
+        <p class="label">Mahasiswa Inbound</p>
+        <div class="underline"></div>
+      </div>
+
+      <div class="number-card">
+        <span class="number-count" data-target="1341">1.341</span>
+        <p class="label">Mahasiswa Outbound</p>
+        <div class="underline"></div>
+      </div>
+
+      <div class="number-card">
+        <span class="number-count" data-target="65588">65.588</span>
+        <p class="label">Alumni</p>
+        <div class="underline"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
+
+<!-- SECTION: Banyak Jalur Menuju Muda Mendunia -->
+<section class="jalur-muda-mendunia">
+  <h2>Banyak Jalur Menuju Muda Mendunia</h2>
+  <p>
+    UMY, kampus dengan reputasi unggul dalam mencetak lulusan yang kompeten, inovatif,
+    dan berakhlak mulia, menawarkan berbagai jalur pendaftaran yang siap membantu Anda
+    mewujudkan impian gemilang di masa depan.
+  </p>
+
+  <div class="jalur-container">
+    <div class="jalur-card">
+      <div class="jalur-icon">⭐</div>
+      <div class="jalur-content">
+        <h3>Jalur Nilai Rapor</h3>
+        <p>📞 0821 3451 0549</p>
+        <a href="https://jalurapor.umy.ac.id" target="_blank">jalurapor.umy.ac.id</a>
+      </div>
+    </div>
+
+    <div class="jalur-card">
+      <div class="jalur-icon">💻</div>
+      <div class="jalur-content">
+        <h3>Jalur CBT</h3>
+        <p>📞 0895 3555 66667</p>
+        <a href="https://cbt.umy.ac.id" target="_blank">cbt.umy.ac.id</a>
+      </div>
+    </div>
+
+    <div class="jalur-card">
+      <div class="jalur-icon">📜</div>
+      <div class="jalur-content">
+        <h3>Jalur SKL/Ijazah</h3>
+        <p>📞 0853 2685 5719</p>
+        <a href="https://jalurskl.umy.ac.id" target="_blank">jalurskl.umy.ac.id</a>
+      </div>
+    </div>
+
+    <div class="jalur-card">
+      <div class="jalur-icon">📘</div>
+      <div class="jalur-content">
+        <h3>Jalur Nilai UTBK-SNBT</h3>
+        <p>📞 0812 3778 7776</p>
+        <a href="https://jalurutbk.umy.ac.id" target="_blank">jalurutbk.umy.ac.id</a>
+      </div>
+    </div>
+
+    <div class="jalur-card">
+      <div class="jalur-icon">🌿</div>
+      <div class="jalur-content">
+        <h3>Jalur SBMPTMu</h3>
+        <p>📞 0813 8811 1912</p>
+        <a href="https://sbmptmu.id" target="_blank">sbmptmu.id</a>
+      </div>
+    </div>
+
+    <div class="jalur-card">
+      <div class="jalur-icon">🎓</div>
+      <div class="jalur-content">
+        <h3>Jalur RPL</h3>
+        <p>📞 0812 1550 1558</p>
+        <a href="https://rpl.umy.ac.id" target="_blank">rpl.umy.ac.id</a>
+      </div>
+    </div>
+
+    <div class="jalur-card">
+      <div class="jalur-icon">👷</div>
+      <div class="jalur-content">
+        <h3>Profesi</h3>
+        <p>📞 0821 3800 2020</p>
+        <a href="https://penmaruprofesi.umy.ac.id" target="_blank">penmaruprofesi.umy.ac.id</a>
+      </div>
+    </div>
+
+    <div class="jalur-card">
+      <div class="jalur-icon">🎓</div>
+      <div class="jalur-content">
+        <h3>Pascasarjana</h3>
+        <p>📞 0821 3800 2020</p>
+        <a href="https://penmarupasca.umy.ac.id" target="_blank">penmarupasca.umy.ac.id</a>
+      </div>
+    </div>
+
+    <div class="jalur-card">
+      <div class="jalur-icon">💰</div>
+      <div class="jalur-content">
+        <h3>Beasiswa</h3>
+        <p>📞 0813 2832 3837</p>
+        <a href="https://beasiswa.umy.ac.id" target="_blank">beasiswa.umy.ac.id</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: BERITA TERKINI -->
+<section class="berita-terkini-section">
+  <div class="berita-header">
+    <div class="judul-container">
+      <h2>Berita Terkini</h2>
+      <p>Informasi Terkini tentang UMY</p>
+    </div>
+    <a href="#" class="lihat-semua">Lihat Semua →</a>
+  </div>
+
+  <div class="berita-utama">
+    <img src="Image/breaking-news-sign-on-globe-600nw-2622724287.webp" alt="Berita Utama">
+    <div class="berita-utama-content">
+      <h3>Din Syamsuddin: Perubahan FAI Menjadi FSIP UMY Adalah Strategi Membangun Peradaban Islam Baru</h3>
+      <span class="tanggal">27 October 2025, 14:33</span>
+      <p>
+        Universitas Muhammadiyah Yogyakarta (UMY) secara resmi meluncurkan Fakultas Studi Islam dan Peradaban (FSIP),
+        menggantikan nomenklatur sebelumnya yaitu Fakultas Agama Islam (FAI). Peluncuran yang berlangsung di Amphitheater
+        Gedung Ibrahim E6 lantai 5 ini turut dihadiri oleh Prof. Dr. Din Syamsuddin, M.A., mantan Ketua Umum Pimpinan Pusat
+        Muhammadiyah sekaligus tokoh nasional...
+      </p>
+    </div>
+  </div>
+
+  <div class="berita-grid">
+    <div class="berita-card">
+      <img src="Image/breaking-news-sign-on-globe-600nw-2622724287.webp" alt="Berita 2">
+      <div class="berita-card-content">
+        <h4>Meneguhkan Peran Global Islam: FSIP UMY Jadi Motor Penggerak Peradaban Baru</h4>
+        <span class="tanggal">27 October 2025, 14:31</span>
+      </div>
+    </div>
+
+    <div class="berita-card">
+      <img src="Image/breaking-news-sign-on-globe-600nw-2622724287.webp" alt="Berita 3">
+      <div class="berita-card-content">
+        <h4>Budaya Instan dan Krisis Nilai Bayangi Organisasi Mahasiswa, UMY Dorong Revitalisasi Kepemimpinan</h4>
+        <span class="tanggal">27 October 2025, 14:10</span>
+      </div>
+    </div>
+
+    <div class="berita-card">
+      <img src="Image/breaking-news-sign-on-globe-600nw-2622724287.webp" alt="Berita 4">
+      <div class="berita-card-content">
+        <h4>Lazismu UMY Salurkan Beasiswa Living Cost bagi 125 Mahasiswa dari Berbagai Perguruan Tinggi</h4>
+        <span class="tanggal">27 October 2025, 14:07</span>
+      </div>
+    </div>
+
+    <div class="berita-card">
+      <img src="Image/breaking-news-sign-on-globe-600nw-2622724287.webp" alt="Berita 5">
+      <div class="berita-card-content">
+        <h4>Nama FAI UMY Resmi Berubah Jadi FSIP, Perkuat Arah Global dan Inklusif</h4>
+        <span class="tanggal">27 October 2025, 14:02</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- International Program -->
+<section class="international-section">
+  <div class="container">
+    <div class="text-side">
+      <h2>International Program</h2>
+      <p>UMY siap mencetak lulusan dengan kompetensi unggul dan berdaya saing global. Bersama UMY, jemput impianmu menjadi Mendunia!</p>
+
+      <div class="stats">
+        <div class="stat-box">
+          <h3>318</h3>
+          <p>International Full-time Student</p>
+          <span>(2020-2024)</span>
+        </div>
+        <div class="stat-box">
+          <h3>15</h3>
+          <p>Summer School Focal</p>
+        </div>
+        <div class="stat-box">
+          <h3>8</h3>
+          <p>International Undergraduate Program (IUP)</p>
+        </div>
+        <div class="stat-box">
+          <h3>119</h3>
+          <p>Visiting Professor</p>
+          <span>(2021-2024)</span>
+        </div>
+        <div class="stat-box">
+          <h3>1.221</h3>
+          <p>International Faculty</p>
+          <span>(2020-2024)</span>
+        </div>
+      </div>
+
+      <a href="#" class="btn-selengkapnya">Selengkapnya</a>
+    </div>
+
+    <div class="image-side">
+      <div class="image-wrapper">
+        <img src="Image/Img.png" alt="Mahasiswa UMY">
+        <div class="accent red"></div>
+        <div class="accent yellow"></div>
+        <div class="accent green"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Riset dan Inovasi Section -->
+<section class="research-section">
+    <div class="research-container">
+        <h2 class="research-title">Riset dan Inovasi</h2>
+        
+        <div class="research-content">
+            
+            <div class="research-main-content">
+                
+                <div class="image-wrapper-large">
+                <img src="Image\WhatsApp Image 2025-10-28 at 11.45.14_d8fdc145.jpg" alt="Laboratorium Riset UMY">                    
+                </div>
+                
+                <div class="research-right-side">
+                    
+                    <div class="image-wrapper-small">
+                    <img src="Image\WhatsApp Image 2025-10-28 at 11.45.14_d8fdc145.jpg" alt="Laboratorium Riset UMY">                        
+                    </div>
+                    
+                    <div class="research-text-combo">
+                        <p class="research-desc">
+                            Dengan pencapaian **Klasterisasi Mandiri**, UMY terus berkomitmen dan mendorong kemajuan **riset dan inovasi** yang berbasis pada **solusi praktis**. UMY mampu menghasilkan **karya ilmiah** dan **inovasi teknologi** yang berdampak nyata bagi masyarakat.
+                        </p>
+                        <a href="#" class="btn-selengkapnya">Selengkapnya</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="research-stats">
+                <div class="stat-card">
+                    <h3 class="number-count" data-target="3700">3.700</h3>
+                    <p>Publikasi Scopus</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="number-count" data-target="16262">16.262</h3>
+                    <p>Sitasi Scopus</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="number-count" data-target="2359">2.359</h3>
+                    <p>HAKI</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="number-count" data-target="30">30</h3>
+                    <p>Kolaborator Penelitian</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- Alumni Section -->
+<section class="alumni-section">
+    <div class="alumni-container">
+        <h2>Outstanding Alumni</h2>
+        
+        <span class="alumni-nav-arrow" data-direction="prev">&#10094;</span> 
+
+        <div class="alumni-carousel-wrapper">
+            
+            <div class="alumni-grid">
+                
+                <div class="alumni-card">
+                    <img src="Image\Alumni.jpg" alt="Prof. Dra. Hj. Siti Syamsiyatun, M.A., Ph.D.">
+                    <span class="jabatan">Guru Besar bidang Ilmu Kajian Islam dan Gender, UIN Sunan Kalijaga Yogyakarta, yang juga merupakan Alumni Fakultas Agama Islam Universitas Muhammadiyah Yogyakarta.</span>
+                    <h3>Prof. Dra. Hj. Siti Syamsiyatun, M.A., Ph.D.</h3>
+                    <p class="penghargaan">Penerima anugerah Outstanding Alumni Award UMY tahun 2023</p>
+                </div>
+                
+                <div class="alumni-card">
+                    <img src="Image\Alumni.jpg" alt="Dr. dr. Irwan Barilian Immadoel Haq, Sp.BS(K), Subsp N-Onk">
+                    <span class="jabatan">Dokter spesialis bedah syaraf, Alumni Fakultas Kedokteran dan Ilmu Kesehatan, yang juga dikenal sebagai pionir metode bedah syaraf Awake Craniotomy di Indonesia.</span>
+                    <h3>Dr. dr. Irwan Barilian Immadoel Haq, Sp.BS(K), Subsp N-Onk</h3>
+                    <p class="penghargaan">Penerima anugerah Outstanding Alumni Award UMY tahun 2024</p>
+                </div>
+                
+                <div class="alumni-card">
+                    <img src="Image\Alumni.jpg" alt="Nasrullah Larada">
+                    <span class="jabatan">Ketua Umum Pengurus Pusat Keluarga Besar Pelajar Islam Indonesia (KB PII). Alumni Fakultas Ilmu Sosial dan Politik.</span>
+                    <h3>Nasrullah Larada</h3>
+                    <p class="penghargaan">Penerima anugerah Outstanding Alumni Award UMY tahun 2018</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Image\Alumni.jpg" alt="Dr. Lalu Muhammad Iqbal">
+                    <span class="jabatan">Ketua Umum Asosiasi Diplomat Indonesia, Juru Bicara Kementerian Luar Negeri, Duta Besar RI untuk Turki, dan saat ini sebagai Gubernur Terpilih Nusa Tenggara Barat. Alumni Hubungan Internasional, Fakultas Ilmu Sosial dan Politik.</span>
+                    <h3>Dr. Lalu Muhammad Iqbal</h3>
+                    <p class="penghargaan">Penerima anugerah Outstanding Alumni Award UMY tahun 2019</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Image\Alumni.jpg" alt="Ismail Basbeth">
+                    <span class="jabatan">Sutradara, penulis naskah, produser film, dan penyunting. Pendiri rumah produksi Mata Cinema. Alumni dari Prodi Ilmu Komunikasi, Fakultas Ilmu Sosial dan Politik.</span>
+                    <h3>Ismail Basbeth</h3>
+                    <p class="penghargaan">Penerima anugerah Outstanding Alumni Award UMY tahun 2022</p>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <span class="alumni-nav-arrow" data-direction="next">&#10095;</span>
+
+    </div>
+</section>
+
+<!-- Magz Section -->
+<section class="magz-section">
+    <div class="magz-content-wrapper">
+        
+        <div class="magz-header">
+            <p class="sub-title">Kisah UMY di Edisi Majalah Digital</p>
+            <h2 class="main-title">UMY Magz</h2>
+        </div>
+
+        <div class="magz-link-header">
+            <p>Kabar dari UMY dalam bentuk majalah digital</p>
+            <a href="#" class="lihat-semua">Lihat Semua →</a>
+        </div>
+
+        <div class="magz-display-wrapper flipbook-active">
+            
+            <iframe 
+                src="https://publuu.com/flip-book/1000847/2207868/page/1?embed" 
+                title="Publuu Flipbook Example"
+                scrolling="no" 
+                frameborder="0" 
+                allow="clipboard-write; autoplay; fullscreen" 
+                allowfullscreen="allowfullscreen" 
+                class="publuuflip"
+                
+                /* PROPERTI CSS INI AKAN DITIMPA OLEH CLASS DI BAWAH */
+                style="width:100%; height:100%; border:none;" 
+            ></iframe>
+            
+        </div>
+
+        <div class="sampul-grid">
+            
+            <div class="sampul-card">
+                <img src="Image\Sampul Majalah.jpg" alt="UMY Magz Sampul 1">
+            </div>
+            <div class="sampul-card">
+                <img src="Image\Sampul Majalah.jpg" alt="UMY Magz Sampul 1">
+            </div>
+            <div class="sampul-card">
+                <img src="Image\Sampul Majalah.jpg" alt="UMY Magz Sampul 1">
+            </div>
+            <div class="sampul-card">
+                <img src="Image\Sampul Majalah.jpg" alt="UMY Magz Sampul 1">
+            </div>
+            </div>
+    </div>
+</section>
+
+<!-- Social Media Section -->
+<section id="media-sosial-section" style="padding: 20px;">
+    <div class="header-sosmed" style="text-align: center; margin-bottom: 20px;">
+        <h2 style="font-size: 24px; color: #333; margin-bottom: 5px;">Media Sosial</h2>
+        <p style="font-size: 14px; color: #666;">Informasi Lebih Cepat, Koneksi Lebih Dekat</p>
+    </div>
+
+    <div class="social-tabs">
+        <div class="tab-button active" data-tab="instagram">Instagram</div>
+        <div class="tab-button" data-tab="tiktok">Tiktok</div>
+        <div class="tab-button" data-tab="facebook">Facebook</div>
+        <div class="tab-button" data-tab="x">X</div>
+    </div>
+
+    <div class="main-content-wrapper">
+        
+        <div class="video-container">
+            <div class="youtube-embed-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/Fzc3j8QG_Mw" 
+                    title="Introduction to Public Health Informatics" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="social-embed-container">
+            
+            <div id="instagram-tab-content" class="tab-content active-content">
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DQelM7VkiVw/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:calc(100% - 2px);">
+                    <div style="padding:16px;"> 
+                        <a href="https://www.instagram.com/p/DQelM7VkiVw/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> 
+                            <div style=" display: flex; flex-direction: row; align-items: center;"> 
+                                <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> 
+                                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> 
+                                    <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> 
+                                    <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                                </div>
+                            </div>
+                            <div style="padding: 19% 0;"></div> 
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">[SVG Icon Instagram]</div>
+                            <div style="padding-top: 8px;"> 
+                                <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                            </div>
+                            <div style="padding: 12.5% 0;"></div> 
+                            </a>
+                        <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/p/DQelM7VkiVw/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by JASA TITIP BELI SINCE 2016 (@clotheshoppe_id)</a>
+                        </p>
+                    </div>
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+
+            <div id="tiktok-tab-content" class="tab-content">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@afriyo_e/video/7567225631390420245" data-video-id="7567225631390420245" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@afriyo_e" href="https://www.tiktok.com/@afriyo_e?refer=embed">@afriyo_e</a> spot crystal crab mancing fish it <a title="fishit" target="_blank" href="https://www.tiktok.com/tag/fishit?refer=embed">#fishit</a> <a title="roblox" target="_blank" href="https://www.tiktok.com/tag/roblox?refer=embed">#roblox</a> <a title="talonbaik" target="_blank" href="https://www.tiktok.com/tag/talonbaik?refer=embed">#talonbaik</a> <a target="_blank" title="♬ suara asli  - Afriyo" href="https://www.tiktok.com/music/suara-asli-Afriyo-7567225668347071240?refer=embed">♬ suara asli  - Afriyo</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+
+            <div id="facebook-tab-content" class="tab-content">
+                <p style="text-align: center; padding: 50px; border: 1px dashed #ccc;">**Facebook Embed** (Sediakan kode embed untuk konten ini)</p>
+            </div>
+
+            <div id="x-tab-content" class="tab-content">
+                <p style="text-align: center; padding: 50px; border: 1px dashed #ccc;">**X (Twitter) Embed** (Sediakan kode embed untuk konten ini)</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!--================-->
+<!--Hamburger Adjust-->
+<!--================-->
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+  document.querySelector('.btn-daftar').classList.toggle('active');
+}
+</script>
+
+<!-- ========================= -->
+<!-- CUSTOM FOOTER WRAPPER -->
+<!-- ========================= -->
+<div class="custom-footer-wrapper">
+
+    <!-- Background image -->
+    <div class="footer-bg-img" aria-hidden="true">
+        <img src="./Image/Gambar Footer.png" alt="Gambar Footer" />
+    </div>
+
+    <!-- Overlay untuk ikon sosial -->
+    <div class="footer-overlay">
+
+        <div class="elementor-social-icons-wrapper elementor-grid" role="list">
+
+            <!-- INSTAGRAM -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="Instagram">
+                    <img src="./Icons/instagram.svg" alt="Instagram" />
+                </a>
+            </span>
+
+            <!-- YOUTUBE -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="YouTube">
+                    <img src="./Icons/youtube.svg" alt="YouTube" />
+                </a>
+            </span>
+
+            <!-- TIKTOK -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="TikTok">
+                    <img src="./Icons/tiktok.svg" alt="TikTok" />
+                </a>
+            </span>
+
+            <!-- FACEBOOK -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="Facebook">
+                    <img src="./Icons/facebook.svg" alt="Facebook" />
+                </a>
+            </span>
+
+            <!-- X -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="X">
+                    <img src="./Icons/x.svg" alt="X" />
+                </a>
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+        
+<!-- Script untuk Tab Media Sosial -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // 1. Dapatkan target ID konten dari atribut data-tab
+                const targetTabId = this.getAttribute('data-tab') + '-tab-content';
+
+                // 2. Hapus kelas 'active' dari semua tombol
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // 3. Tambahkan kelas 'active' ke tombol yang diklik
+                this.classList.add('active');
+
+                // 4. Sembunyikan semua konten dan hapus kelas 'active-content'
+                tabContents.forEach(content => {
+                    content.classList.remove('active-content');
+                    content.style.display = 'none';
+                });
+
+                // 5. Tampilkan konten yang sesuai
+                const activeContent = document.getElementById(targetTabId);
+                if (activeContent) {
+                    activeContent.classList.add('active-content');
+                    activeContent.style.display = 'block';
+                }
+
+                // 6. Muat ulang (re-render) embed Instagram jika tombolnya diklik
+                if (window.instgrm && activeContent.id === 'instagram-tab-content') {
+                    window.instgrm.Embeds.process();
+                }
+                
+                // 7. Muat ulang (re-render) embed TikTok jika tombolnya diklik
+                if (activeContent.id === 'tiktok-tab-content' && window.tiktok_embed_script_loaded) {
+                    // Jika Anda memiliki banyak embed, mungkin diperlukan logika muat ulang yang lebih canggih
+                    // Untuk saat ini, asumsikan embed TikTok berfungsi saat ditampilkan.
+                }
+            });
+        });
+        
+        // Aturan awal: Pastikan konten aktif default (Instagram) terlihat saat halaman dimuat
+        const initialActiveContent = document.querySelector('.tab-content.active-content');
+        if (initialActiveContent) {
+            initialActiveContent.style.display = 'block';
+        }
+    });
+</script>
+
+
+<!-- Script untuk Alumni Carousel -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const grid = document.querySelector('.alumni-grid');
+        const arrows = document.querySelectorAll('.alumni-nav-arrow');
+        const cards = document.querySelectorAll('.alumni-card');
+        
+        if (!grid || cards.length === 0) return;
+
+        const totalCards = cards.length; 
+        const gap = 30; // Sesuai dengan CSS
+        let currentIndex = 0; // Indeks kartu paling kiri yang terlihat
+        
+        // --- Fungsi Dinamis ---
+        
+        // Menentukan berapa kartu yang terlihat berdasarkan lebar layar (sesuai media query CSS)
+        function getCardsPerView() {
+            if (window.innerWidth <= 576) return 1;
+            if (window.innerWidth <= 992) return 2;
+            return 3;
+        }
+        
+        // Menghitung unit pergeseran yang akurat (Lebar 1 Kartu + Gap)
+        function getSlideUnit() {
+            // Mengambil lebar kartu (width) yang sudah dihitung oleh CSS calc()
+            return cards[0].getBoundingClientRect().width + gap; 
+        }
+
+        function updateCarousel() {
+            const slideUnit = getSlideUnit(); 
+            const offset = -currentIndex * slideUnit;
+            grid.style.transform = `translateX(${offset}px)`;
+        }
+
+        
+        // --- Event Listeners (Logika Infinite Looping) ---
+        
+        arrows.forEach(arrow => {
+            arrow.addEventListener('click', () => {
+                const direction = arrow.dataset.direction;
+                const cardsPerView = getCardsPerView();
+                // Indeks maksimum yang valid sebelum Looping terjadi
+                const maxIndex = totalCards - cardsPerView;
+
+                if (direction === 'next') {
+                    // Jika mencapai batas set kartu terakhir, kembali ke 0
+                    if (currentIndex >= maxIndex) {
+                         currentIndex = 0; 
+                    } else {
+                        currentIndex++; // Maju 1 kartu
+                    }
+                } else if (direction === 'prev') {
+                    // Jika berada di kartu pertama (indeks 0), kembali ke posisi set kartu terakhir
+                    if (currentIndex <= 0) {
+                        currentIndex = maxIndex; 
+                    } else {
+                        currentIndex--; // Mundur 1 kartu
+                    }
+                }
+                
+                updateCarousel();
+            });
+        });
+        
+        // 1. Inisialisasi tampilan awal
+        updateCarousel();
+        
+        // 2. Penanganan Resize (Penting untuk Responsif)
+        window.addEventListener('resize', () => {
+             // Cek dan set ulang currentIndex jika melewati batas baru setelah resize
+             const maxIndexAfterResize = totalCards - getCardsPerView();
+             if (currentIndex > maxIndexAfterResize) {
+                currentIndex = maxIndexAfterResize;
+             }
+             // Perbarui posisi setelah jeda pendek
+             setTimeout(updateCarousel, 50); 
+        });
+    });
+</script>
+
+
+
+<!-- Script untuk Animasi Angka Naik -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Fungsi format angka (pakai format lokal Indonesia)
+  const formatNumber = (number) => {
+    return Math.floor(number).toLocaleString("id-ID");
+  };
+
+  // Fungsi animasi angka naik
+  const animateNumber = (element, target, duration = 3000) => {
+    let start = 0;
+    let startTime = null;
+
+    const step = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const value = start + progress * (target - start);
+      element.textContent = formatNumber(value);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      } else {
+        element.textContent = formatNumber(target);
+      }
+    };
+
+    window.requestAnimationFrame(step);
+  };
+
+  // Gabungan dua tipe target:
+  // 1️⃣ .stat-box h3
+  // 2️⃣ Elemen dengan class .number-count dan atribut data-target
+  const counters = document.querySelectorAll(".stat-box h3, .number-count");
+
+  // Buat observer agar animasi aktif saat elemen terlihat
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+
+          // Ambil target angka
+          let target;
+          if (el.dataset.target) {
+            target = parseFloat(el.dataset.target);
+          } else {
+            target = parseFloat(el.textContent.replace(/\./g, ""));
+          }
+
+          if (!isNaN(target)) {
+            animateNumber(el, target);
+          }
+
+          observer.unobserve(el); // berhenti observe setelah animasi
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  counters.forEach(el => observer.observe(el));
+});
+</script>
+
+
+</body>
+</html>

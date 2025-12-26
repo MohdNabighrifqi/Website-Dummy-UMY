@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akademik - UMY</title>
+  <link rel="stylesheet" href="/CSS/akademik.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- TOP BAR KUNING -->
+  <div class="top-bar">
+    <div class="top-left">
+      <div class="lang-select">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="ID" class="flag">
+        <span>ID</span>
+        <span class="arrow">⌃</span>
+      </div>
+    </div>
+
+    <div class="top-right">
+      <a href="#">News</a>
+      <a href="#">SDGs CENTER</a>
+      <a href="#">Donasi Pendidikan</a>
+      <a href="#" class="search">🔍</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR PUTIH -->
+  <nav class="main-nav">
+
+    <!-- LOGO -->
+    <div class="logo">
+  <a href="/main.html">
+    <img 
+      src="/Image/Logo Header.png" 
+      alt="Logo UMY" 
+      style="width:254.57px; height:40.16px; object-fit:contain;"
+    >
+  </a>
+</div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links">
+      <li><a href="/html/profil.html">Profil</a></li>
+      <li><a href="/html/akademik.html">Akademik</a></li>
+      <li><a href="/html/riset.html">Riset dan Inovasi</a></li>
+      <li><a href="/html/pengabdian.html">Pengabdian</a></li>
+      <li><a href="/html/fasilitas.html">Fasilitas</a></li>
+      <li><a href="/html/campuslife.html">Campus Life</a></li>
+    </ul>
+
+    <!-- BUTTON -->
+    <a href="/html/admisi.html" class="btn-daftar">Pendaftaran Maba</a>
+
+  </nav>
+</body>
+
+  <!-- SECTION KAMPUS (yang benar) -->
+  <section class="kampus-section">
+      <div class="kampus-image"></div>
+  </section>
+
+<section class="statistik-section">
+  <div class="statistik-container">
+
+    <div class="stat-box">
+      <h2 class="count" data-value="23000">0</h2>
+      <p>Mahasiswa Aktif</p>
+      <span class="line"></span>
+    </div>
+
+    <div class="stat-box">
+      <h2 class="count" data-value="5472">0</h2>
+      <p>Mahasiswa Baru 2024</p>
+      <span class="line"></span>
+    </div>
+
+    <div class="stat-box">
+      <h2 class="count" data-value="140">0</h2>
+      <p>Mahasiswa Asing</p>
+      <span class="line"></span>
+    </div>
+
+    <div class="stat-box">
+      <h2 class="count" data-value="65588">0</h2>
+      <p>Alumni</p>
+      <span class="line"></span>
+    </div>
+
+  </div>
+</section>
+
+<section class="layanan-akademik">
+  <h2 class="section-title">Layanan Akademik Universitas</h2>
+  <p class="section-desc">
+    Untuk menunjang masa depan Anda sebagai pribadi yang Unggul dan Islami, Muda Mendunia,
+    UMY menawarkan banyak pilihan program studi. Saat ini UMY memiliki 46 Program Studi,
+    yang terdiri dari 3 program pada jenjang vokasi, 23 program sarjana, 15 program pascasarjana,
+    dan 5 program profesi, yang telah terakreditasi baik nasional maupun internasional.
+  </p>
+
+  <h3 class="sub-title">Program Sarjana</h3>
+
+<!-- === PROGRAM SARJANA (Sudah Ada) === -->
+<div class="program-card">
+  <div class="program-text">
+    <h4 class="faculty-title">Fakultas Teknik</h4>
+    <p>
+      Dapatkan pendidikan berbasis teknologi, riset aplikatif, dan jaringan industri yang luas
+      bersama para inovator muda di Fakultas Teknik UMY.
+    </p>
+    <a href="#" class="btn-selengkapnya">Selengkapnya ➜</a>
+  </div>
+
+  <div class="program-img">
+    <img src="img/fakultas-teknik.png" alt="Fakultas Teknik">
+  </div>
+</div>
+
+
+<!-- === PROGRAM MAGISTER === -->
+<section class="section">
+  <h3 class="section-title">Program Magister</h3>
+  <div class="divider"></div>
+
+  <div class="program-card">
+    <div class="program-text">
+      <h4 class="faculty-title">Program Magister</h4>
+      <p>Mengembangkan Pemimpin Masa Depan yang Berintegritas, Inovatif, dan Berwawasan Global.</p>
+      <a href="#" class="btn-selengkapnya">Selengkapnya ➜</a>
+    </div>
+
+    <div class="program-img">
+      <img src="magister.jpg" alt="Program Magister">
+    </div>
+  </div>
+</section>
+
+
+<!-- === PROGRAM DOKTORAL === -->
+<section class="section">
+  <h3 class="section-title">Program Doktoral</h3>
+  <div class="divider"></div>
+
+  <div class="program-card">
+    <div class="program-text">
+      <h4 class="faculty-title">Program Doktoral</h4>
+      <p>Membentuk Ahli yang Berani, Bijak, dan Berkontribusi pada Kemajuan Ilmu Pengetahuan.</p>
+      <a href="#" class="btn-selengkapnya">Selengkapnya ➜</a>
+    </div>
+
+    <div class="program-img">
+      <img src="doktoral.jpg" alt="Program Doktoral">
+    </div>
+  </div>
+</section>
+
+
+<!--Unggul-->
+<section class="akreditasi-section">
+  <div class="akreditasi-container">
+
+    <!-- ===================== -->
+    <!-- KOLOM ATAS -->
+    <!-- ===================== -->
+    <div class="top-section">
+      <h2 class="title">Akreditasi</h2>
+      <div class="line"></div>
+
+      <p class="desc">
+        Universitas Muhammadiyah Yogyakarta (UMY) terus berkomitmen untuk memberikan jaminan mutu pendidikan tinggi
+        yang berkualitas, untuk mencetak generasi yang unggul serta berguna bagi umat, bangsa dan kemanusiaan.
+        Keseriusan dan komitmen tersebut telah kami buktikan dengan diraihnya pengakuan nasional dari Badan
+        Akreditasi Nasional-Perguruan Tinggi (BAN-PT) dan badan akreditasi internasional untuk akreditasi institusi,
+        fakultas maupun program studi.
+      </p>
+    </div>
+
+    <!-- ===================== -->
+    <!-- KOLOM BAWAH -->
+    <!-- ===================== -->
+    <div class="bottom-section">
+
+      <!-- KIRI -->
+      <div class="bottom-left">
+        <h3 class="sub-title">Universitas Terakreditasi Unggul</h3>
+
+        <p class="desc2">
+          UMY telah meraih akreditasi institusi tertinggi dari BAN-PT dan akan terus mempertahankan kualitasnya.
+        </p>
+
+        <a class="download-btn" href="#">DOWNLOAD SERTIFIKAT</a>
+      </div>
+
+      <!-- KANAN GAMBAR -->
+      <div class="bottom-right">
+        <img src="unggul.png" alt="Akreditasi Unggul">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="akreditasi-section">
+
+    <div class="program-tabs">
+        <button class="tab active">PROGRAM SARJANA</button>
+        <button class="tab">MAGISTER</button>
+        <button class="tab">DOKTORAL</button>
+    </div>
+
+    <div class="akreditasi-accordion">
+
+        <!-- Item 1 -->
+        <div class="accordion-item active">
+            <button class="accordion-header">
+                FAKULTAS AGAMA ISLAM
+                <span class="arrow-icon">&#9662;</span>
+            </button>
+
+            <div class="accordion-content">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Program Studi</th>
+                                <th>SK Akreditasi</th>
+                                <th>Tahun SK</th>
+                                <th>Peringkat</th>
+                                <th>Masa Berlaku</th>
+                                <th>Tgl Kadaluwarsa</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Komunikasi dan Penyiaran Islam Kelas Reguler</td>
+                                <td>1231/SK/BAN-PT/AK-ISK/S/II/2022</td>
+                                <td>2022</td>
+                                <td>Unggul</td>
+                                <td>Masih Berlaku</td>
+                                <td>30/12/2025</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Komunikasi dan Penyiaran Islam Kelas Internasional/IPICOM</td>
+                                <td>—</td>
+                                <td>—</td>
+                                <td>—</td>
+                                <td>Masih Berlaku</td>
+                                <td>—</td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Pendidikan Agama Islam</td>
+                                <td>12253/SK/BAN-PT/AK-ISK/S/XI/2021</td>
+                                <td>2021</td>
+                                <td>B</td>
+                                <td>Masih Berlaku</td>
+                                <td>23/06/2025</td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Ekonomi Syariah</td>
+                                <td>2840/SK/BAN-PT/S/V/2020</td>
+                                <td>2020</td>
+                                <td>Unggul</td>
+                                <td>Masih Berlaku</td>
+                                <td>30/05/2025</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="accordion-item">
+            <button class="accordion-header">
+                FAKULTAS EKONOMI & BISNIS
+                <span class="arrow-icon">&#9662;</span>
+            </button>
+            <div class="accordion-content"></div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="accordion-item">
+            <button class="accordion-header">
+                FAKULTAS HUKUM
+                <span class="arrow-icon">&#9662;</span>
+            </button>
+            <div class="accordion-content"></div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="accordion-item">
+            <button class="accordion-header">
+                FAKULTAS ILMU SOSIAL DAN ILMU POLITIK
+                <span class="arrow-icon">&#9662;</span>
+            </button>
+            <div class="accordion-content"></div>
+        </div>
+
+        <!-- Tambahkan fakultas lainnya sesuai kebutuhan -->
+<div class="accordion-item">
+    <button class="accordion-header">
+        FAKULTAS TEKNIK
+        <span class="arrow-icon">&#9662;</span>
+    </button>
+
+    <div class="accordion-content">
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Program Studi</th>
+                        <th>SK Akreditasi</th>
+                        <th>Tahun SK</th>
+                        <th>Peringkat</th>
+                        <th>Masa Berlaku</th>
+                        <th>Tgl Kadaluwarsa</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Teknik Elektro</td>
+                        <td>4562/SK/BAN-PT/Akred/S/VII/2020</td>
+                        <td>2020</td>
+                        <td>Unggul</td>
+                        <td>Masih Berlaku</td>
+                        <td>11/08/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- CUSTOM FOOTER WRAPPER -->
+<!-- ========================= -->
+<div class="custom-footer-wrapper">
+
+    <!-- Background image -->
+    <div class="footer-bg-img" aria-hidden="true">
+        <img src="/Image/Gambar Footer.png" alt="Gambar Footer" />
+    </div>
+
+    <!-- Overlay untuk ikon sosial -->
+    <div class="footer-overlay">
+
+        <div class="elementor-social-icons-wrapper elementor-grid" role="list">
+
+            <!-- INSTAGRAM -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="Instagram">
+                    <img src="/Icons/instagram.svg" alt="Instagram" />
+                </a>
+            </span>
+
+            <!-- YOUTUBE -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="YouTube">
+                    <img src="/Icons/youtube.svg" alt="YouTube" />
+                </a>
+            </span>
+
+            <!-- TIKTOK -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="TikTok">
+                    <img src="/Icons/tiktok.svg" alt="TikTok" />
+                </a>
+            </span>
+
+            <!-- FACEBOOK -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="Facebook">
+                    <img src="/Icons/facebook.svg" alt="Facebook" />
+                </a>
+            </span>
+
+            <!-- X -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="X">
+                    <img src="/Icons/x.svg" alt="X" />
+                </a>
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--fungsi dari 0-->
+<script>
+  const currentPage = window.location.pathname;
+  const links = document.querySelectorAll('.nav-links a');
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+<script>
+function animateCounter(el) {
+  const target = +el.getAttribute('data-value');
+  const duration = 1800; // 1.8 detik
+  const frameRate = 30;
+  const totalFrames = Math.round(duration / (1000 / frameRate));
+  let currentFrame = 0;
+
+  const counter = setInterval(() => {
+    currentFrame++;
+    const progress = currentFrame / totalFrames;
+    const value = Math.floor(progress * target);
+
+    el.textContent = value.toLocaleString('id-ID');
+
+    if (currentFrame === totalFrames) {
+      clearInterval(counter);
+    }
+
+  }, 1000 / frameRate);
+}
+
+// Observer — jalanin animasi jika section muncul di layar
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const counters = document.querySelectorAll('.count');
+      counters.forEach(counter => animateCounter(counter));
+      observer.disconnect(); // biar animasi hanya jalan 1x
+    }
+  });
+});
+
+observer.observe(document.querySelector('.statistik-section'));
+</script>
+
+
+<script>
+const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+accordionHeaders.forEach((header) => {
+    header.addEventListener("click", () => {
+        const parent = header.parentElement;
+        const content = parent.querySelector(".accordion-content");
+
+        // Jika sudah terbuka → tutup
+        if (parent.classList.contains("active")) {
+            parent.classList.remove("active");
+            content.style.maxHeight = null;
+            return;
+        }
+
+        // Tutup accordion lain
+        document.querySelectorAll(".accordion-item").forEach((item) => {
+            if (item !== parent) {
+                item.classList.remove("active");
+                item.querySelector(".accordion-content").style.maxHeight = null;
+            }
+        });
+
+        // Buka accordion ini
+        parent.classList.add("active");
+        content.style.maxHeight = content.scrollHeight + "px";
+    });
+});
+</script>

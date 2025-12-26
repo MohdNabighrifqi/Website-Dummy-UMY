@@ -1,0 +1,504 @@
+/* ========================= */
+/* NAVBAR UTAMA PUTIH */
+/* ========================= */
+.main-nav {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 50px;
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start; /* Mepet kiri */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.logo img {
+  display: block; /* biar ga ada jarak bawaan */
+}
+
+.logo a {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 250px; /* <— jarak dari logo */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000; /* hijau UMY */
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Tombol Pendaftaran Maba */
+.btn-daftar {
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.btn-daftar:hover {
+  background-color: #000000;
+}
+
+/* ========================= */
+/* BOTTOM BAR LANGUAGE */
+/* ========================= */
+.umy-bottom {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.umy-container {
+  padding: 10px 50px; /* SAMA dengan navbar */
+}
+
+.language {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 0; /* PASTI mepet kiri */
+}
+
+
+
+
+/* =========================
+   BEASISWA HERO SECTION
+========================= */
+.beasiswa-hero {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 360px;
+
+  margin: 0 auto;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-image: url("https://admisi.umy.ac.id/wp-content/uploads/2025/11/Header-Website-Admisi_Pilihan-Beasiswa_1920-x-360-px-scaled.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* =========================
+   OVERLAY (OPTIONAL)
+========================= */
+.beasiswa-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+   TITLE
+========================= */
+.beasiswa-title {
+  position: relative;
+  margin: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .beasiswa-hero {
+    min-height: 240px;
+  }
+
+  .beasiswa-title {
+    font-size: 28px;
+  }
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   SECTION
+================================ */
+.beasiswa-section {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #212529;
+}
+
+.section-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   ACCORDION
+================================ */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Header */
+.accordion-header {
+  padding: 15px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.accordion-header::-webkit-details-marker {
+  display: none;
+}
+
+/* Icon */
+.accordion-header .icon {
+  transition: transform 0.3s ease;
+  font-size: 20px;
+}
+
+/* Rotate icon when open */
+.accordion-item[open] .icon {
+  transform: rotate(90deg);
+}
+
+/* Content */
+.accordion-content {
+  padding: 18px;
+  font-size: 16px;
+  line-height: 1.6;
+  border-top: 1px solid #eee;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+  }
+
+  .accordion-content {
+    font-size: 15px;
+  }
+}
+
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #212529;
+  margin: 0;
+  background: #f8f9fa;
+}
+
+/* SECTION */
+.beasiswa-section {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* ACCORDION */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordion-item {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.accordion-title {
+  cursor: pointer;
+  padding: 16px 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+}
+
+.accordion-title:hover {
+  background: #e9ecef;
+}
+
+.accordion-item[open] .icon {
+  transform: rotate(90deg);
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  padding: 20px;
+}
+
+.accordion-content p {
+  margin-bottom: 16px;
+}
+
+.accordion-content h5 {
+  margin: 20px 0 10px;
+  font-weight: 600;
+}
+
+.accordion-content ol {
+  padding-left: 20px;
+}
+
+/* BOTTOM BAR */
+.umy-bottom {
+  background: #343a40;
+  padding: 10px 0;
+}
+
+.umy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+}
+
+.language {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: left; /* MEPET KIRI */
+}
+
+
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #212529;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+/* SECTION */
+.timeline-section {
+  margin-top: 30px;
+  padding: 0 16px;
+}
+
+.timeline-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TITLE */
+.timeline-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* TABLE */
+.table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.timeline-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.timeline-table thead {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.timeline-table th,
+.timeline-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.timeline-table th {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.timeline-table tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .timeline-title {
+    font-size: 26px;
+  }
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+/* FOOTER */
+.footer-umy {
+  background-color: #932520;
+  color: #ffffff;
+  padding: 60px 20px;
+}
+
+/* CONTAINER */
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* COLUMN */
+.footer-col {
+  flex: 1 1 300px;
+}
+
+.footer-col h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* DIVIDER */
+.footer-divider {
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-bottom: 16px;
+}
+
+/* TEXT */
+.footer-col p {
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+
+/* LIST */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+/* LINKS */
+.footer-col a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}

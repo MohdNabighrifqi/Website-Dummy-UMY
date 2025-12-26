@@ -1,0 +1,690 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ========================= */
+/* TOP BAR KUNING */
+/* ========================= */
+.top-bar {
+  background-color: #000000; /* warna kuning UMY */
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.lang-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #333;
+}
+
+.flag {
+  width: 25px;
+  height: 16px;
+  border: 1px solid #ccc;
+}
+
+.arrow {
+  font-size: 10px;
+  transform: rotate(180deg);
+}
+
+.top-right a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 40px;
+  transition: opacity 0.2s ease;
+}
+
+.top-right a:hover {
+  opacity: 0.7;
+}
+
+/* ========================= */
+/* NAVBAR UTAMA PUTIH */
+/* ========================= */
+.main-nav {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 50px;
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start; /* Mepet kiri */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.logo img {
+  display: block; /* biar ga ada jarak bawaan */
+}
+
+.logo a {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 250px; /* <— jarak dari logo */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000; /* hijau UMY */
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Tombol Pendaftaran Maba */
+.btn-daftar {
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.btn-daftar:hover {
+  background-color: #000000;
+}
+
+
+
+/* ================================================ */
+/* ::: DITAMBAHKAN: Underline Active Navigation ::: */
+/* ================================================ */
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background-color: #000000;
+  border-radius: 100px;
+  transition: width 0.3s ease;
+}
+
+/* Hover */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Active (otomatis) */
+.nav-links a.active::after {
+  width: 100%;
+}
+
+
+/*=========================*/
+/* Hamburger icon (HP mode) */
+/*=========================*/
+.hamburger {
+  display: none;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #004b2b;
+}
+
+/* Mode Mobile */
+@media (max-width: 900px) {
+
+  .main-nav {
+    padding: 0;
+    height: auto;
+  }
+
+  .logo img {
+    height: 55px;
+  }
+
+  /* Tampilkan hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* Sembunyikan nav & tombol daftar */
+  .nav-links,
+  .btn-daftar {
+    display: none;
+  }
+
+  /* Saat navbar dibuka */
+  .nav-links.active {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .nav-links.active li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-links.active a {
+    font-size: 18px;
+    display: block;
+  }
+
+  /* Tombol daftar ikut muncul di bawah navigation */
+  .btn-daftar.active {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+/* ========================= */
+/* SECTION FASILITAS UMY */
+.fasilitas-umy-section {
+  width: 100%;
+  height: 500px; /* kamu bisa sesuaikan */
+  background: #d6d7d8; /* warna abu seperti gambar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Kotak kuning */
+.box-title {
+  background: #f4b400; /* kuning UMY */
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 25px 80px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Kotak hijau */
+.box-subtitle {
+  background: #0f5434; /* hijau UMY */
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 100px;
+  margin-top: -15px; /* membuat overlap seperti gambar */
+  border-radius: 3px;
+  text-align: center;
+}
+
+
+
+
+
+/* ========================= */
+/* FASILITAS AKADEMIK */
+/* ========================= */
+/* SECTION WRAPPER */
+#fasilitas-akademik {
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* TEXT ATAS */
+.fa-desc {
+  max-width: 100%;
+  margin: 10px;
+  margin-left: 80px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #0d0d0d;
+}
+
+/* TITLE BLOCK */
+.fa-title-wrap {
+  margin-left: 80px;
+  margin-bottom: 50px;
+  text-align: contain;
+}
+
+.fa-title {
+  background: #E9B700;
+  color: white;
+  padding: 18px 25px;
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.fa-subtitle {
+  margin-top: -5px;
+  background: #0D5039;
+  color: white;
+  max-width: 550px;
+  padding: 18px 25px;
+  font-size: 16px;
+}
+
+/* SLIDER */
+.fa-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 80px;
+  margin-right: 50px;
+  overflow: hidden;
+}
+
+.fa-track {
+  display: flex;
+  gap: 40px;
+  transition: 0.5s;
+}
+
+.fa-card {
+  min-width: 350px;
+  background: white;
+}
+
+.fa-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.fa-card h3 {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #8A2B25;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* ARROWS */
+.fa-arrow {
+  background: transparent;
+  border: none;
+  font-size: 38px;
+  color: #0D5039;
+  cursor: pointer;
+}
+
+.left {
+  margin-right: 20px;
+}
+.right {
+  margin-left: 20px;
+}
+
+/* DOTS */
+.fa-dots {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.fa-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #D1D1D1;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fa-dots button.active {
+  background: #8A2B25;
+}
+
+
+
+
+
+
+/*=====Olahrga===*/
+.fasilitas-olahraga {
+  width: 100%;
+  padding: 40px 80px;
+}
+
+.title-box {
+  background: #e7b437;
+  padding: 25px;
+  width: 420px;
+}
+
+.title-box h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.subtitle-box {
+  background: #244a32;
+  padding: 22px 25px;
+  width: 650px;
+  margin-top: -10px;
+}
+
+.subtitle-box p {
+  color: white;
+  font-weight: 600;
+}
+
+.carousel-container {
+  position: relative;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 480px;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-item h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #7a1c17;
+  font-weight: 700;
+}
+
+/* Buttons */
+.prev, .next {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #244a32;
+  font-weight: bold;
+}
+
+.prev { left: -10px; }
+.next { right: -10px; }
+
+/* Dots */
+.carousel-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: #ccc;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: #244a32;
+}
+
+
+/*============Fasum================*/
+/* WRAPPER SECTION */
+.fasilitas-section {
+  width: 100%;
+  padding: 40px 80px;
+}
+
+/* TITLE (KOTAK KUNING) */
+.fasilitas-section .title-box {
+  background: #e7b437;
+  padding: 25px;
+  width: 420px;
+}
+
+.fasilitas-section .title-box h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* SUBTITLE (KOTAK HIJAU GELAP) */
+.fasilitas-section .subtitle-box {
+   background: #244a32;
+  padding: 22px 25px;
+  width: 1000px;
+
+  margin-top: -10px;
+}
+
+.fasilitas-section .subtitle-box p {
+   color: white;
+  font-weight: 600;
+}
+
+/* === CAROUSEL ITEM === */
+.carousel-container {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+  width: 85%;
+}
+
+.carousel-item {
+  min-width: 380px;
+  background: white;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 260px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carousel-item h3 {
+  margin-top: 12px;
+  color: #8c2c24;
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+/* BUTTON NAVIGASI */
+.carousel-container button {
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: #1b4e3b;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* DOTS NAVIGATION */
+.carousel-dots {
+  margin-top: 18px;
+}
+
+.carousel-dots .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-dots .active {
+  background-color: #8c2c24;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   FIX POSISI & WARNA IKON
+   ========================= */
+
+.elementor-social-icons-wrapper {
+    position: absolute !important;
+    top: 70% !important;      /* Ubah ini untuk naik–turun */
+    left: 50% !important;     /* Ubah ini untuk geser kiri–kanan */
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    gap: 32px !important;
+    z-index: 30 !important;
+}
+
+/* Kotak ikon */
+.elementor-social-icons-wrapper .elementor-icon {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    background: rgba(255,255,255,0.08) !important;
+    border: 2px solid rgba(255,255,255,0.2) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ukuran file SVG */
+.elementor-social-icons-wrapper .elementor-icon img {
+    width: 26px !important;
+    height: 26px !important;
+    filter: brightness(0) invert(1); /* Jadi putih */
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 768px) {
+    .elementor-social-icons-wrapper {
+        top: 54% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        gap: 22px !important;
+    }
+
+    .elementor-social-icons-wrapper .elementor-icon {
+        width: 40px !important;
+        height: 40px !important;
+        padding: 8px !important;
+    }
+
+    .elementor-social-icons-wrapper .elementor-icon img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
+
+/* =========================
+   FIX AGAR ICON SELALU DI ATAS GAMBAR
+   ========================= */
+
+.footer-overlay {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bg-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.custom-footer-wrapper {
+    position: relative !important;
+}

@@ -1,0 +1,1793 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ========================= */
+/* TOP BAR KUNING */
+/* ========================= */
+.top-bar {
+  background-color: #000000; /* warna kuning UMY */
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.lang-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #333;
+}
+
+.flag {
+  width: 25px;
+  height: 16px;
+  border: 1px solid #ccc;
+}
+
+.arrow {
+  font-size: 10px;
+  transform: rotate(180deg);
+}
+
+.top-right a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 40px;
+  transition: opacity 0.2s ease;
+}
+
+.top-right a:hover {
+  opacity: 0.7;
+}
+
+/* ========================= */
+/* NAVBAR UTAMA PUTIH */
+/* ========================= */
+.main-nav {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 50px;
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start; /* Mepet kiri */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.logo img {
+  display: block; /* biar ga ada jarak bawaan */
+}
+
+.logo a {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 250px; /* <— jarak dari logo */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000; /* hijau UMY */
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Tombol Pendaftaran Maba */
+.btn-daftar {
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.btn-daftar:hover {
+  background-color: #000000;
+}
+
+
+
+/* ================================================ */
+/* ::: DITAMBAHKAN: Underline Active Navigation ::: */
+/* ================================================ */
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background-color: #000000;
+  border-radius: 100px;
+  transition: width 0.3s ease;
+}
+
+/* Hover */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Active (otomatis) */
+.nav-links a.active::after {
+  width: 100%;
+}
+
+
+/*=========================*/
+/* Hamburger icon (HP mode) */
+/*=========================*/
+.hamburger {
+  display: none;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #004b2b;
+}
+
+/* Mode Mobile */
+@media (max-width: 900px) {
+
+  .main-nav {
+    padding: 0;
+    height: auto;
+  }
+
+  .logo img {
+    height: 55px;
+  }
+
+  /* Tampilkan hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* Sembunyikan nav & tombol daftar */
+  .nav-links,
+  .btn-daftar {
+    display: none;
+  }
+
+  /* Saat navbar dibuka */
+  .nav-links.active {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .nav-links.active li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-links.active a {
+    font-size: 18px;
+    display: block;
+  }
+
+  /* Tombol daftar ikut muncul di bawah navigation */
+  .btn-daftar.active {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+
+/* ========================= */
+/* VIDEO SECTION */
+/* ========================= */
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-section iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  border: none;
+  z-index: 1;
+}
+
+/* ========================= */
+/* REKOGNISI */
+/* ========================= */
+.rekognisi-section {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.rekognisi-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000; /* warna merah UMY */
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+/* ========================= */
+/* BARIS 1 – QS */
+/* ========================= */
+.logo-row.row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ agar tetap responsif */
+  gap: 90px;
+  padding: 10px;
+  margin: 0 0 0;
+  
+}
+
+.logo-row.row-1 img {
+  height: 95px; /* ukuran besar khas QS */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease; /* ✅ efek hover aktif */
+  cursor: pointer;
+}
+
+.logo-row.row-1 img:hover {
+  transform: scale(1.07);
+  filter: brightness(1.1);
+}
+
+/* ========================= */
+/* BARIS 2 – THE, Impact, Uniranks */
+/* ========================= */
+.logo-row.row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ perbaikan utama: biar responsif */
+  gap: 80px;
+  padding: 10px 0; /* Padding atas/bawah 10px, kiri/kanan 0px */
+  margin: 0px 0 0px;
+}
+
+.logo-row.row-2 img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.logo-row.row-2 img:hover {
+  transform: scale(1.07);
+  filter: brightness(1.1);
+}
+
+/* ========================= */
+/* BARIS 3 – Kemenkes, SNI, Webometrics, GreenMetric */
+/* ========================= */
+.logo-row.row-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* ✅ penting agar logo 4 ini adaptif */
+  gap: 70px;
+  padding: 10px;
+}
+
+.logo-row.row-3 img {
+  height: 85px; /* sedikit lebih kecil biar seimbang */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.logo-row.row-3 img:hover {
+  transform: scale(1.07);
+  filter: brightness(1.1);
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+@media (max-width: 992px) {
+  .rekognisi-section {
+    padding: 50px 25px;
+  }
+
+  .logo-row.row-1 img {
+    height: 80px;
+  }
+
+  .logo-row.row-2 img {
+    height: 70px;
+  }
+
+  .logo-row.row-3 img {
+    height: 65px;
+  }
+
+  .logo-row.row-1,
+  .logo-row.row-2,
+  .logo-row.row-3 {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .rekognisi-section h2 {
+    font-size: 24px;
+  }
+
+  .logo-row.row-1,
+  .logo-row.row-2,
+  .logo-row.row-3 {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .logo-row img {
+    height: 55px !important; /* biar ukuran sama di HP */
+  }
+}
+
+/* Tambahan umum untuk logo baris */
+.logo-row {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efek hover universal biar semua baris aktif */
+.logo-row img:hover {
+  transform: scale(1.07);
+  filter: brightness(1.1);
+}
+
+/* Pastikan gambar tidak collapse (kadang flex shrink bikin ilang di mobile) */
+.logo-row img {
+  flex-shrink: 0;
+  display: block;
+}
+
+/* Pastikan logo baris kedua tidak ketiban margin baris pertama */
+.row-2 {
+  margin-top: 20px;
+}
+
+
+/* ========================= */
+/* PROGRAM STUDI SECTION */
+/* ========================= */
+.program-studi-section {
+  text-align: center;
+  padding: 80px 20px 100px;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Judul utama */
+.program-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+/* Subjudul */
+.program-subtitle {
+  font-size: 17px;
+  color: #4a4a4a;
+  font-weight: 400;
+  margin-bottom: 55px;
+}
+
+/* Container pencarian */
+.search-container {
+  background-color: #f5f5f5;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 45px 60px 55px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading di atas search bar */
+.search-heading {
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 35px;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 80%;
+  height: 55px;
+  border: 2px solid #000000;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  padding: 0 20px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.search-bar input::placeholder {
+  color: #999;
+  font-size: 15px;
+}
+
+.search-bar input:focus {
+  border-color: #696969;
+  box-shadow: 0 0 6px rgba(77, 77, 77, 0.4);
+}
+
+.search-bar button {
+  height: 55px;
+  width: 60px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #626262;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.search-bar button:hover {
+  background-color: #696969;
+}
+
+/* RESPONSIF */
+@media (max-width: 992px) {
+  .program-title {
+    font-size: 34px;
+  }
+  .search-container {
+    width: 95%;
+    padding: 40px 30px 50px;
+  }
+  .search-bar input {
+    width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  .program-title {
+    font-size: 28px;
+  }
+  .search-container {
+    width: 95%;
+    padding: 30px 20px;
+  }
+  .search-bar {
+    flex-direction: column;
+  }
+  .search-bar input {
+    width: 100%;
+    border-radius: 10px;
+    border-right: 2px solid #000000;
+    margin-bottom: 10px;
+  }
+  .search-bar button {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* ========================= */
+/* UMY IN NUMBER SECTION */
+/* ========================= */
+.umy-in-number-section {
+  background-color: #f5f5f5;
+  padding: 80px 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.number-container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000; /* merah khas UMY */
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  letter-spacing: 0.5px;
+}
+
+/* Layout dua baris, empat kolom */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.number-card {
+  flex-basis: 22%;
+  text-align: center;
+}
+
+.number-count {
+  font-size: 56px;
+  font-weight: 800;
+  color: #000000;
+  display: block;
+  margin-bottom: 8px;
+  line-height: 1.1;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.underline {
+  width: 80px;
+  height: 2px;
+  background-color: #333;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .number-card {
+    flex-basis: 45%;
+    margin-bottom: 40px;
+  }
+  .number-count {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .number-card {
+    flex-basis: 100%;
+  }
+  .number-count {
+    font-size: 40px;
+  }
+}
+
+
+/* ========================= */
+/* Jalur Muda Mendunia (3 Kolom Maksimal Full-Width) */
+/* ========================= */
+.jalur-muda-mendunia {
+    text-align: center;
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.jalur-muda-mendunia h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 15px;
+    /* Padding dipertahankan seperti sebelumnya */
+    padding: 0 7%; 
+}
+
+.jalur-muda-mendunia p {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.6;
+    /* Padding dipertahankan seperti sebelumnya */
+    padding: 0 7%; 
+}
+
+/* Grid layout */
+.jalur-container {
+    display: grid;
+    /* ✅ DIPERTAHANKAN: Tetap 3 kolom untuk desktop */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    
+    /* ✅ REVISI UTAMA: Menaikkan max-width menjadi 1600px untuk memaksimalkan ukuran 3 kolom */
+    max-width: 1600px; 
+    margin: 0 auto;
+    
+    /* ✅ REVISI: Mengurangi padding persentase agar kartu lebih dekat ke tepi dan terlihat lebih besar */
+    padding: 0 3%; 
+}
+
+/* Kartu individual */
+.jalur-card {
+    background: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    
+    /* ✅ REVISI: Padding internal ditingkatkan untuk membuat card lebih besar */
+    padding: 40px 30px; 
+    
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jalur-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); 
+}
+
+.jalur-icon {
+    color: #000000; 
+    font-size: 44px;
+    flex-shrink: 0;
+    width: 60px; 
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jalur-content h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+.jalur-content p {
+    font-size: 16px;
+    color: #555; 
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.jalur-content a {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+/* Responsive */
+/* Di bawah 992px, tetap menjadi 2 kolom dan 1 kolom di 576px */
+@media (max-width: 992px) {
+    .jalur-container {
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 0 5%; 
+    }
+    .jalur-muda-mendunia {
+        padding: 60px 0; 
+    }
+}
+
+@media (max-width: 576px) {
+    .jalur-container {
+        grid-template-columns: 1fr; 
+        padding: 0 20px; 
+    }
+    .jalur-muda-mendunia {
+        padding: 40px 0; 
+    }
+    .jalur-muda-mendunia h2 {
+        font-size: 26px;
+        padding: 0 20px; 
+    }
+    .jalur-muda-mendunia p {
+        padding: 0 20px; 
+    }
+}
+
+
+/* ========================= */
+/* SECTION: BERITA TERKINI */
+/* ========================= */
+.berita-terkini-section {
+  padding: 80px 100px;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Header atas */
+.berita-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.berita-header h2 {
+  font-size: 28px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.berita-header p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.lihat-semua {
+  font-weight: 700;
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.lihat-semua:hover {
+  color: #000000;
+}
+
+/* Berita utama */
+.berita-utama {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.berita-utama img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.berita-utama-content {
+  padding: 25px 30px;
+  text-align: left;
+}
+
+.berita-utama-content h3 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.berita-utama-content .tanggal {
+  font-size: 13px;
+  color: #999;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.berita-utama-content p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Grid berita kecil */
+.berita-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.berita-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.berita-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.berita-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.berita-card-content {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.berita-card-content h4 {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.berita-card-content .tanggal {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsif */
+@media (max-width: 992px) {
+  .berita-utama {
+    flex-direction: column;
+  }
+
+  .berita-utama img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .berita-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .berita-terkini-section {
+    padding: 60px 20px;
+  }
+
+  .berita-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .berita-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+/* ================ */
+/* INTERNATIONAL SECTION */
+/* ================ */
+.international-section {
+  position: relative;
+  width: 100vw;
+  background-color: #fff;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+/* container full, tidak dibatasi max-width */
+.international-section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0 7%; /* beri sedikit padding agar tidak nempel ke tepi */
+  box-sizing: border-box;
+}
+
+/* === TEXT SIDE === */
+.text-side {
+  flex: 1;
+  padding-right: 0px;
+}
+
+.text-side h2 {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.text-side p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* === STATS === */
+.stats {
+  display: flex;
+  justify-content: space-between; /* agar rata penuh kiri-kanan */
+  align-items: stretch;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 40px;
+  gap: 15px;
+}
+
+.stat-box {
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  flex: 1; /* agar setiap box menyesuaikan lebar */
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+}
+
+.stat-box h3 {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.stat-box p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.4;
+}
+
+.stat-box span {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-top: 3px;
+}
+
+/* === BUTTON === */
+.btn-selengkapnya {
+  display: inline-block;
+  background-color: #004b2b;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-selengkapnya:hover {
+  background-color: #11694b;
+}
+
+/* === IMAGE SIDE === */
+
+.image-side {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  position: relative;
+}
+
+/* Aksen Kotak */
+.accent {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.accent.red { background: #000000; top: 15%; right: 25%; }
+.accent.yellow { background: #000000; bottom: 20%; right: 10%; }
+.accent.green { background: #000000; top: 10%; right: 10%; }
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .international-section .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-side {
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    width: 300px;
+  }
+}
+
+/* ========================= */
+/* ===== Riset dan Inovasi Section MODIFIKASI FINAL (SOLUSI STAT BOX) ===== */
+/* ========================= */
+/* ========================= */
+/* ===== Riset dan Inovasi Section MODIFIKASI FINAL (SOLUSI PROPORSI) ===== */
+/* ========================= */
+.research-section {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.research-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.research-title {
+    font-size: 30px; 
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+/* Kontainer Utama - Flex untuk KIRI dan KANAN */
+.research-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+/* Sisi KIRI: Kontainer Gambar + Teks */
+.research-main-content {
+    display: flex;
+    gap: 20px; 
+    /* Lebar optimal untuk kolom kiri: 75% */
+    width: 75%; 
+}
+
+/* Gambar KIRI (Lebih Besar) */
+.image-wrapper-large {
+    width: 60%;
+    /* FINAL ASPECT RATIO: 13/10 (Tinggi) */
+    aspect-ratio: 10 / 10; 
+}
+
+/* KANAN dari main-content: Gambar Kecil + Teks */
+.research-right-side {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Gambar KANAN (Kecil) */
+.image-wrapper-small {
+    width: 125%;
+    /* FINAL TINGGI GAMBAR: 320px untuk keselarasan vertikal */
+    height: 350px; 
+}
+
+.image-wrapper-large img,
+.image-wrapper-small img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bagian Deskripsi dan Tombol */
+.research-text-combo {
+    padding-top: 5px;
+    width: 125%;
+}
+
+.research-desc {
+    /* FINAL FONT SIZE TEKS DESKRIPSI: 15px */
+    font-size: 15px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.btn-selengkapnya {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-selengkapnya:hover {
+    background-color: #007a50;
+}
+
+
+/* Sisi Paling KANAN: Statistik */
+.research-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Lebar optimal untuk kolom kanan: 20% */
+    width: 20%; 
+    flex-shrink: 0;
+}
+
+/* KODE STAT BOX (DIKUNCI DAN TIDAK BERUBAH) */
+.stat-card {
+    background: #fafafa;
+    border-radius: 20px;
+    text-align: center;
+    /* Kunci Lebar dan Tinggi */
+    max-width: 140px; 
+    width: 100%; 
+    padding: 35px 15px; 
+    /* --- */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto; 
+}
+
+
+.stat-card h3 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+
+.stat-card p {
+    font-size: 14px;
+    color: #222;
+    margin: 5px 0 0 0;
+}
+
+/* Media Query untuk Responsivitas */
+@media (max-width: 992px) {
+    .research-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .research-main-content, .research-stats {
+        width: 100%;
+    }
+    
+    .research-main-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-wrapper-large, .research-right-side {
+        width: 100%;
+    }
+
+    .image-wrapper-large, .image-wrapper-small {
+        aspect-ratio: unset;
+        height: auto; 
+    }
+    
+    .research-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .stat-card {
+        width: calc(50% - 7.5px);
+        margin-bottom: 10px;
+        padding: 18px 0; 
+        border-radius: 16px;
+        max-width: unset;
+        margin: 0;
+    }
+    .stat-card h3 {
+        font-size: 24px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .research-title, .research-content {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+
+    .stat-card {
+        width: 100%;
+    }
+}
+/* ========================= */
+/* SECTION: OUTSTANDING ALUMNI (FINAL & INFINITE LOOPING) */
+/* ========================= */
+.alumni-section {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Container utama untuk membatasi konten dan MENGATUR POSISI RELATIF */
+.alumni-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 7%; 
+    box-sizing: border-box;
+    position: relative; /* WAJIB untuk posisi absolute panah */
+}
+
+.alumni-container h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+/* Wrapper yang hanya berfungsi sebagai viewport (overflow: hidden) */
+.alumni-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+    width: 100%; 
+}
+
+/* Panah Navigasi: Posisi Absolute */
+.alumni-nav-arrow {
+    font-size: 30px;
+    color: #000000;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s;
+    user-select: none;
+    z-index: 10; 
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    
+    /* Tombol selalu terlihat karena logika JavaScript adalah Looping */
+    opacity: 1; 
+    pointer-events: auto; 
+}
+
+.alumni-nav-arrow[data-direction="prev"] {
+    left: 4%; /* Posisi di dalam padding 7% */
+}
+
+.alumni-nav-arrow[data-direction="next"] {
+    right: 4%; /* Posisi di dalam padding 7% */
+}
+
+.alumni-nav-arrow:hover {
+    color: #a83232;
+}
+
+/* Grid Kartu Berubah Menjadi Flex-Track */
+.alumni-grid {
+    display: flex; 
+    gap: 30px; 
+    flex-wrap: nowrap; /* Penting: mencegah kartu pindah baris */
+    width: auto;
+    
+    transform: translateX(0); 
+    transition: transform 0.5s ease-in-out; 
+}
+
+/* Kartu Alumni: Mengatur lebar agar 3 kartu muat dalam 100% wrapper */
+.alumni-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* DESKTOP: 3 kolom (100% - 2*30px gap) / 3 */
+    flex-basis: calc((100% - 60px) / 3); 
+    flex-shrink: 0; 
+    flex-grow: 0; 
+}
+
+.alumni-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Detail Kartu Alumni --- */
+.alumni-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #f0f0f0;
+}
+
+.alumni-card h3 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.alumni-card .jabatan {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    min-height: 70px;
+    display: block;
+}
+
+.alumni-card .penghargaan {
+    font-size: 13px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* --- Responsif --- */
+@media (max-width: 992px) {
+    .alumni-container {
+        padding: 0 20px; 
+    }
+    /* TABLET: 2 kolom */
+    .alumni-card {
+        flex-basis: calc((100% - 30px) / 2); 
+    }
+    .alumni-nav-arrow[data-direction="prev"] {
+        left: 0;
+    }
+    .alumni-nav-arrow[data-direction="next"] {
+        right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .alumni-section {
+        padding: 60px 0;
+    }
+    /* MOBILE: 1 kolom */
+    .alumni-card {
+        flex-basis: 100%; 
+    }
+}
+
+/* ========================= */
+/* SECTION: UMY MAGZ - MAJALAH DIGITAL (FINAL & STANDAR) */
+/* ========================= */
+.magz-section {
+    width: 100%;
+    padding: 60px 0; 
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Container Wrapper untuk Konten dan Padding 7% */
+.magz-content-wrapper {
+    width: 100%;
+    margin: 0 auto; 
+    /* ✅ STANDAR DESKTOP: Padding horizontal 7% */
+    padding: 0 7%; 
+    box-sizing: border-box;
+}
+
+/* Header Utama */
+.magz-header {
+    margin-bottom: 30px; 
+}
+.magz-header .sub-title {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.magz-header .main-title {
+    font-size: 2.5em;
+    color: #000000; /* Warna Merah Maroon */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Link Header Sejajar (Kabar & Lihat Semua) */
+.magz-link-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+.magz-link-header p {
+    margin: 0; 
+    font-size: 1.1em; 
+    font-weight: bold; 
+    color: #000000; /* Warna Merah Maroon */
+}
+.magz-link-header .lihat-semua {
+    text-decoration: none;
+    color: #000000; 
+    font-weight: bold;
+    white-space: nowrap; 
+}
+
+/* Tampilan Magz - Wrapper untuk Iframe/Flipbook */
+.magz-display-wrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Aturan Flipbook Aktif (Tinggi Iframe) */
+.magz-display-wrapper.flipbook-active {
+    padding-bottom: 0; 
+    height: 700px; /* Tinggi yang lebih besar, sesuai permintaan Anda */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
+}
+.magz-display-wrapper iframe {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ================================= */
+/* ✅ GRID SAMPUL (4 KOLOM BERJEJER/ROW) */
+/* ================================= */
+.sampul-grid {
+    display: grid;
+    /* Ini yang memastikan 4 kolom berjejer (row) di desktop */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; /* Jarak antar kolom */
+    width: 100%;
+}
+
+.sampul-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 15px; /* Padding untuk bingkai */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sampul-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+@media (max-width: 992px) {
+    .magz-content-wrapper { padding: 0 20px; } /* STANDAR TABLET */
+    .magz-display-wrapper.flipbook-active {
+        height: 500px; 
+    }
+    .sampul-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom di tablet */
+    }
+}
+
+@media (max-width: 576px) {
+    .magz-content-wrapper { padding: 0 20px; } /* STANDAR HP */
+    .magz-display-wrapper.flipbook-active {
+        height: 400px; 
+    }
+    .sampul-grid {
+        grid-template-columns: 1fr; /* 1 kolom di HP */
+    }
+}
+
+/* ========================= */
+/* SECTION: FOOTER STANDARD */
+/* ========================= */
+/* Catatan: Sesuai permintaan Anda (2025-10-31), semua non-breaking spaces telah dihapus. */
+
+/* Reset dan Penataan Umum */
+#media-sosial-section * {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Penataan Tab Navigasi */
+.social-tabs {
+    display: flex;
+    justify-content: flex-end; /* Posisikan ke kanan */
+    margin-bottom: 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Tambahkan sedikit ruang di sekitar tombol agar shadow terlihat */
+    padding-right: 10px; 
+}
+
+/* Penataan Tombol Tab (Sesuai Gambar) */
+.tab-button {
+    padding: 10px 20px; /* Padding lebih besar */
+    border: none; 
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    /* Membuat tombol melengkung */
+    border-radius: 8px; 
+    /* Menambahkan bayangan untuk tampilan 3D */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08); 
+    margin-right: 10px; /* Tambahkan jarak antar tombol */
+}
+
+/* Hapus aturan border-right: none karena sudah ada margin */
+.tab-button:not(:last-child) {
+    border-right: none; 
+}
+
+/* Penataan Tombol Tab Aktif (Instagram) */
+.tab-button.active {
+    /* Warna latar belakang merah gelap */
+    background-color: #000000; 
+    color: white;
+    font-weight: bold;
+    border-color: #000000;
+    /* Bayangan untuk tombol aktif (tertekan/lebih gelap) */
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.15); 
+}
+
+/* Efek Hover (Opsional) */
+.tab-button:hover:not(.active) {
+    background-color: #f0f0f0;
+}
+
+/* Tata Letak Utama (Dua Kolom) */
+.main-content-wrapper {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px; /* Lebar maksimal konten */
+    margin: 0 auto;
+}
+
+/* Kolom Kiri: YouTube Embed */
+.video-container {
+    flex: none;
+    width: 100%;
+    max-width: 800px;
+    margin: 0; /* hilangkan auto */
+    display: block; /* ✅ ganti flex biar posisi normal */
+    border: none;
+    box-shadow: none;
+    height: auto;
+}
+
+
+
+/* Wrapper untuk menjaga Rasio Aspek (16:9) pada Iframe YouTube */
+.youtube-embed-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+}
+
+.youtube-embed-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Kolom Kanan: Media Sosial Embed */
+.social-embed-container {
+    flex: 1; /* Proporsi sekitar 1/3 */
+    min-width: 350px; 
+    max-width: 400px;
+}
+
+/* Styling Tab Konten (untuk JavaScript) */
+.tab-content {
+    max-width: 100%;
+    /* Semua konten tersembunyi secara default, JavaScript akan menampilkannya */
+    display: none; 
+}
+
+/* Hanya konten dengan kelas ini yang akan ditampilkan oleh JS */
+.tab-content.active-content {
+    display: block; 
+}
+
+
+
+/* Media Queries untuk Tampilan Responsif */
+@media (max-width: 800px) {
+    .main-content-wrapper {
+        flex-direction: column; /* Ubah menjadi satu kolom di layar kecil */
+        padding: 0 10px;
+    }
+    
+    .social-tabs {
+        justify-content: center; /* Pusatkan tab di layar kecil */
+        padding: 0 10px;
+    }
+
+    .video-container, .social-embed-container {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+/* =========================
+   FIX POSISI & WARNA IKON
+   ========================= */
+
+.elementor-social-icons-wrapper {
+    position: absolute !important;
+    top: 70% !important;      /* Ubah ini untuk naik–turun */
+    left: 50% !important;     /* Ubah ini untuk geser kiri–kanan */
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    gap: 32px !important;
+    z-index: 30 !important;
+}
+
+/* Kotak ikon */
+.elementor-social-icons-wrapper .elementor-icon {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    background: rgba(255,255,255,0.08) !important;
+    border: 2px solid rgba(255,255,255,0.2) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ukuran file SVG */
+.elementor-social-icons-wrapper .elementor-icon img {
+    width: 26px !important;
+    height: 26px !important;
+    filter: brightness(0) invert(1); /* Jadi putih */
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 768px) {
+    .elementor-social-icons-wrapper {
+        top: 54% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        gap: 22px !important;
+    }
+
+    .elementor-social-icons-wrapper .elementor-icon {
+        width: 40px !important;
+        height: 40px !important;
+        padding: 8px !important;
+    }
+
+    .elementor-social-icons-wrapper .elementor-icon img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
+
+/* =========================
+   FIX AGAR ICON SELALU DI ATAS GAMBAR
+   ========================= */
+
+.footer-overlay {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bg-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.custom-footer-wrapper {
+    position: relative !important;
+}

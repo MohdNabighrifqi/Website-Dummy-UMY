@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Life - UMY</title>
+  <link rel="stylesheet" href="/CSS/Profil.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- TOP BAR KUNING -->
+  <div class="top-bar">
+    <div class="top-left">
+      <div class="lang-select">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="ID" class="flag">
+        <span>ID</span>
+        <span class="arrow">⌃</span>
+      </div>
+    </div>
+
+    <div class="top-right">
+      <a href="#">News</a>
+      <a href="#">SDGs CENTER</a>
+      <a href="#">Donasi Pendidikan</a>
+      <a href="#" class="search">🔍</a>
+    </div>
+  </div>
+
+  <!-- NAVBAR PUTIH -->
+  <nav class="main-nav">
+
+    <!-- LOGO -->
+    <div class="logo">
+  <a href="/main.html">
+    <img 
+      src="/Image/Logo Header.png" 
+      alt="Logo UMY" 
+      style="width:254.57px; height:40.16px; object-fit:contain;"
+    >
+  </a>
+</div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links">
+      <li><a href="/html/profil.html">Profil</a></li>
+      <li><a href="/html/akademik.html">Akademik</a></li>
+      <li><a href="/html/riset.html">Riset dan Inovasi</a></li>
+      <li><a href="/html/pengabdian.html">Pengabdian</a></li>
+      <li><a href="/html/fasilitas.html">Fasilitas</a></li>
+      <li><a href="/html/campuslife.html">Campus Life</a></li>
+    </ul>
+
+    <!-- BUTTON -->
+    <a href="pendaftaran.html" class="btn-daftar">Pendaftaran Maba</a>
+
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ========================= -->
+<!-- CUSTOM FOOTER WRAPPER -->
+<!-- ========================= -->
+<div class="custom-footer-wrapper">
+
+    <!-- Background image -->
+    <div class="footer-bg-img" aria-hidden="true">
+        <img src="/Image/Gambar Footer.png" alt="Gambar Footer" />
+    </div>
+
+    <!-- Overlay untuk ikon sosial -->
+    <div class="footer-overlay">
+
+        <div class="elementor-social-icons-wrapper elementor-grid" role="list">
+
+            <!-- INSTAGRAM -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="Instagram">
+                    <img src="/Icons/instagram.svg" alt="Instagram" />
+                </a>
+            </span>
+
+            <!-- YOUTUBE -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="YouTube">
+                    <img src="/Icons/youtube.svg" alt="YouTube" />
+                </a>
+            </span>
+
+            <!-- TIKTOK -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="TikTok">
+                    <img src="/Icons/tiktok.svg" alt="TikTok" />
+                </a>
+            </span>
+
+            <!-- FACEBOOK -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="Facebook">
+                    <img src="/Icons/facebook.svg" alt="Facebook" />
+                </a>
+            </span>
+
+            <!-- X -->
+            <span class="elementor-grid-item" role="listitem">
+                <a class="elementor-icon" href="#" aria-label="X">
+                    <img src="/Icons/x.svg" alt="X" />
+                </a>
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+  const currentPage = window.location.pathname;
+  const links = document.querySelectorAll('.nav-links a');
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
